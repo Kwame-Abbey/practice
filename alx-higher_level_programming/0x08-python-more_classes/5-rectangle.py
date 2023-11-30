@@ -38,3 +38,20 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return 0
         return 2 * self.width + 2 * self.height
+
+    def __str__(self):
+        string = ""
+        if self.width == 0 or self.height == 0:
+            return string
+        else:
+            for i in range(self.height):
+                string += '#' * self.width
+                if i < self.height - 1:
+                    string += '\n'
+            return string
+
+    def __repr__(self):
+        return "Rectangle({:d}, {:d})".format(self.width, self.height)
+
+    def __del__(self):
+        print("Bye rectangle...")
