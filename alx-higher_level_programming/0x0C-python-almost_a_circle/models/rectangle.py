@@ -71,3 +71,12 @@ class Rectangle(Base):
     def __str__(self):
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}" \
                  .format(self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args, **kwargs):
+        if not args:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+        else:
+            rect_attr = ['id', 'width', 'height', 'x', 'y']
+            for idx, ele in enumerate(args):
+                setattr(self, rect_attr[idx], ele)
