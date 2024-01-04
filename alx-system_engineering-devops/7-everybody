@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+chmod ugo+x hello or
+chmod a+x hello or
+chmod +x hello or 
+chmod 777 hello using octal notation
