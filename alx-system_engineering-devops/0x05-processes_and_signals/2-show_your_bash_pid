@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Get files containing "bash"
+
+ps auxf | grep "bash"
