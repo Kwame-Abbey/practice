@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Add a custom header 'X-Served-By' to server
+
+sudo apt-get update
+sudo apt-get install nginx
+file="/etc/nginx/sites-available/default"
+cmd1="\nadd_header X-Served-By $HOSTNAME"
+sudo sed -i "/location:/a $cmd1" $file
+sudo service nginx start
