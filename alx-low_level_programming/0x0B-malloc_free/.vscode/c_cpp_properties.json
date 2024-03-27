@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/ablordey/projects/practice/alx-low_level_programming/0x0B-malloc_free/main.h"
+            ],
+            "defines": []
+        }
+    ],
+    "version": 4
+}
