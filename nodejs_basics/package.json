@@ -1,0 +1,16 @@
+{
+  "name": "nodejs_basics",
+  "version": "1.0.0",
+  "description": "* Filesystem * Events * middlewares * os",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --env-file=.env server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
