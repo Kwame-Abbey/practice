@@ -9,6 +9,5 @@ def safe_print_list_integers(my_list=[], x=0):
         return nb
     except (ValueError, TypeError):
         s = 1
-        while s == 1:
-            s == 0
-            continue
+    if s = 1:
+        continue
